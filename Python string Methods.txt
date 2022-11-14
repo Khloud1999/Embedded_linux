@@ -1,4 +1,5 @@
 Python string Methods
+Greated by: kholoud khaled
  ***********************************************************************************
 Function Name : capitalize()  
 
