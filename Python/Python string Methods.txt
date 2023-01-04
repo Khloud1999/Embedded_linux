@@ -1,0 +1,485 @@
+Python string Methods
+Greated by: kholoud khaled
+ ***********************************************************************************
+Function Name : capitalize()  
+
+Argument      : void
+
+Return        : string
+ 
+Functionality : Converts the first character to upper case
+
+ ***********************************************************************************
+Function Name : casefold() 
+
+Argument      : void
+
+Return        : string
+ 
+Functionality :Converts all the string into lower case
+
+ ***********************************************************************************
+Function Name : center(length, character) 
+
+Argument      : Required. The length of the returned string
+		Optional. The character to fill the missing space on each side. Default is " " space 
+
+Return        : string
+
+Functionality : method will center align the string, using a specified character (space is default) as the fill character.
+
+ ***********************************************************************************
+Function Name : count(value, start, end) 
+
+Argument     : value>>Required. A String. The string to value to search for
+               Start>>Optional. An Integer. The position to start the search. Default is 0
+	       End>>Optional. An Integer. The position to end the search. Default is the end of the string
+
+Return       : int 
+ 
+Functionality :Returns the number of times a specified value occurs in a string <<تكرار الحرف 
+ ***********************************************************************************
+Function Name : encode(encoding=encoding, errors=errors(
+
+Argument      : encoding>>Optional. A String specifying the encoding to use.efault is UTF-8
+		Errors>>Optional. A String specifying the error method. Legal values are:'backslashreplace'	
+		- uses a backslash instead of the character that could not be encoded'ignore'	
+		- ignores the characters that cannot be encoded'namereplace'	
+		- replaces the character with a text explaining the character'strict'	
+		- Default, raises an error on failure'replace'	
+		- replaces the character with a questionmark'xmlcharrefreplace'	
+		- replaces the character with an xml character
+
+Return        : string
+   
+Functionality :encodes the string, using the specified encoding. If no encoding is specified, UTF-8 will be used.
+ ***********************************************************************************
+Function Name : endswith(value, start, end) 
+
+Argument      :value>>Required. The value to check if the string ends with
+		Start>>Optional. An Integer specifying at which position to start the search
+		End>>Optional. An Integer specifying at which position to end the search
+
+Return        : boolean
+ 
+Functionality : returns True if the string ends with the specified value,otherwise False.
+ ***********************************************************************************
+Function Name :expandtabs(tabsize)
+
+Argument      : tabsize>>Optional. A number specifying the tabsize. Default tabsize is 8(المسافه اللي هتسبها)
+
+Return        : string
+ 
+Functionality :sets the tab size to the specified number of white spaces.
+
+ ***********************************************************************************
+Function Name :find(value, start, end)
+
+Argument      : value>>Required. The value to search for
+		Start>>Optional. Where to start the search. Default is 0
+		End>>Optional. Where to end the search. Default is to the end of the string
+
+Return        : int >>number of first position
+			>>-1 is not exist
+ 
+Functionality :the first occurrence of the letter "e" when you only search between position
+
+ ***********************************************************************************
+Function Name : format(value1, value2...) &format_map()
+
+Argument      : value1, value2..>>Required. One or more values that should be formatted and inserted in the string.
+
+Return        : string
+ 
+Functionality :method formats the specified value(s) and insert them inside the string's placeholder.
+		The placeholder is defined using curly brackets: {}. 
+		Read more about the placeholders in the Placeholder section below.
+
+ ***********************************************************************************
+Function Name : index(value, start, end)
+
+Argument      : value>>Required. The value to search for
+		Start>>Optional. Where to start the search. Default is 0
+		End>>Optional. Where to end the search. Default is to the end of the string
+
+Return        :int >>number of first position
+
+Functionality :method finds the first occurrence of the specified value.
+		method raises an exception if the value is not found not return (-1) as find fun
+ ***********************************************************************************
+Function Name : isalnum()
+
+Argument      : void
+
+Return        :boolean
+ 
+Functionality :Check if all the characters in the text is alphanumeric
+		returns True if all the characters are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+
+
+ ***********************************************************************************
+Function Name :isalpha()
+
+Argument      : void
+
+Return        :boolean
+
+Functionality :Check if all the characters in the text is alphabetic
+		returns True if all the characters are alphanumeric,meaning alphabet letter (a-z) 
+
+ ***********************************************************************************
+Function Name : isascii() 
+
+Argument      : void
+
+Return        :boolean
+ 
+Functionality :Check if all the characters in the text are ASCII characters
+		returns True if all the characters are ASCII characters  (a-z).
+
+ ***********************************************************************************
+Function Name : isdecimal()
+
+Argument      : void
+
+Return        : boolean
+
+Functionality :Check if all the characters in the Unicode object are decimals.
+		returns True if all the characters are decimals (0-9).This method is used on Unicode objects.
+ 
+ ***********************************************************************************
+Function Name : isdigit() 
+
+Argument      : void
+
+Return        :  boolean 
+
+Functionality :Check if all the characters in the text are digits
+		Returns True if all the characters are digits,otherwise False.
+
+ ***********************************************************************************
+Function Name : isidentifier()
+
+Argument      : void
+
+Return        : boolean
+ 
+Functionality :Check if the strings are valid identifiers 
+		,A string is considered a valid identifier if it only contains 	
+		returns True if the string is a valid identifier,otherwiseFalse,
+		alphanumeric letters (a-z) and (0-9), or underscores(_).
+		 A valid identifier cannot start with a number, or contain any spaces.
+***********************************************************************************
+Function Name :  txt.islower()
+
+Argument      : void
+
+Return        : boolean
+
+Functionality :Check if all the characters in the text are in lower case
+		returns True if all the characters are in lower	case,otherwise False. 
+		Numbers, symbols and spaces are not checked, only alphabet characters.
+ ***********************************************************************************
+Function Name :isnumeric()
+
+Argument      : void
+
+Return        : boolean
+ 
+Functionality : Check if all the characters in the text are numeric .
+		returns True if all the characters are numeric (0-9),otherwise False. 
+		Exponents, like ² and ¾ are also considered to be numeric values.
+		"-1" and "1.5" are NOTconsidered numeric values, 
+		because all the characters in 	the string must be numeric, and the - and the . are not.
+
+ ***********************************************************************************
+Function Name :isprintable()
+
+Argument      : void
+
+Return        :boolean 
+
+Functionality :Check if all the characters in the text are printable
+ 		returns True if all the characters are printable, otherwise False.
+
+ ***********************************************************************************
+Function Name : isspace()
+
+Argument      : void
+
+Return        : boolean
+
+Functionality : Check if all the characters in the text are white spaces
+		returns True if all the characters in a string are white spaces, otherwise False
+
+ ***********************************************************************************
+Function Name : istitle()
+
+Argument      : void
+
+Return        : boolean 
+		
+Functionality : Check if each word start with an upper case letter
+		method returns True if all words in a text start with a upper case letter,
+		AND the rest of the word are lower case letters, otherwise False.
+		Symbols and numbers are ignored.
+
+ ***********************************************************************************
+Function Name : isupper()
+
+Argument      : void
+
+Return        : boolean 
+
+Functionality : Check if all the characters in the text are in upper case
+		 method returns True if all the characters are in upper case, otherwise False.
+		Numbers, symbols and spaces are not checked, only alphabet characters.
+
+
+ ***********************************************************************************
+Function Name :	join(iterable)
+
+Argument      : iterable >>Required. Any iterable object where all the returned values are strings
+
+Return        :	string
+ 
+Functionality :	Join all items in a dictionary into a string
+		method takes all items in an iterable and joins them into one string.A string must be specified as the separator.
+
+
+ ***********************************************************************************
+Function Name : ljust(length, character)
+
+Argument      : length>>Required. The length of the returned string
+
+		Character>>Optional. A character to fill the missing space (to the right of the string). Default is " " (space).
+
+Return        : string  
+
+Functionality : method will left align the string, using a specified character (space is default) as the fill character.
+
+ ***********************************************************************************
+Function Name : lower()
+
+Argument      : void
+
+Return        : string
+ 
+Functionality : method returns a string where all characters are lower case. Symbols and Numbers are ignored.
+
+ ***********************************************************************************
+Function Name : lstrip(characters)
+
+Argument      : characters>>Optional. A set of characters to remove as leading characters
+
+Return        : string
+ 
+Functionality : removes any leading characters (space is the default leading character to remove)
+
+ ***********************************************************************************
+Function Name : maketrans(x, y, z)
+
+Argument      : x>>Required. If only one parameter is specified, this has to be a dictionary describing how to perform the replace. 
+		   If two or more parameters are specified, this parameter has to be a string specifying the characters you want to replace.
+
+		y>>Optional. A string with the same length as parameter x. Each character
+		   in the first parameter will be replaced with the corresponding character in this string.
+		z>>Optional. A string describing which characters to remove from the original string.
+
+Return        : string
+ 
+Functionality : Use a mapping table to replace many characters.
+		method returns a mapping table that can be used with the translate() method to replace specified characters.
+
+ ***********************************************************************************
+Function Name : partition(value)
+
+Argument      : value>>Required. The string to search for
+
+Return        : string
+ 
+Functionality : method searches for a specified string, and splits the string into a tuple containing three elements.
+		The first element contains the part before the specified string.
+		The second element contains the specified string.
+		The third element contains the part after the string.
+
+ ***********************************************************************************
+Function Name : replace(old value, new value, count)
+
+Argument      : old value>>Required. The string to search for
+		New value>>Required. The string to replace the old value with
+		Count>>Optional. A number specifying how many occurrences of the old value you want to replace. 
+			Default is all occurrences
+
+Return        : string
+ 
+Functionality : method replaces a specified phrase with another specified phrase.
+ ***********************************************************************************
+Function Name : rfind(value, start, end)
+
+Argument      : value>>Required. The value to search for
+		Start>>Optional. Where to start the search. Default is 0
+		End>>Optional. Where to end the search. Default is to the end of the string
+
+Return        : int
+ 
+Functionality :  method finds the last occurrence of the specified value.
+		 The rfind() method returns -1 if the value is not found.
+
+ ***********************************************************************************
+Function Name : rindex(value, start, end)
+
+Argument      : value>>Required. The value to search for
+		Start>>Optional. Where to start the search. Default is 0
+		End>>Optional. Where to end the search. Default is to the end of the string
+
+Return        : int
+ 
+Functionality :  method finds the last occurrence of the specified value.
+		 The rindex() method raises an exception if the value is not found.
+
+ ***********************************************************************************
+Function Name : rjust(length, character)
+
+Argument      : length>>Required. The length of the returned string					
+		character>>Optional. A character to fill the missing space (to the left of the string). Default is " " (space).
+
+Return        : string
+ 
+Functionality :  method will right align the string, using a specified character (space is default) as the fill character.
+
+ ***********************************************************************************
+
+Function Name : rpartition(value)
+
+Argument      : value>>Required. The string to search for
+		character>>Optional. A character to fill the missing space (to the left of the string). Default is " " (space).
+Return        :  string
+ 
+Functionality :  method searches for the last occurrence of a specified string, 
+		 and splits the string into a tuple containing three elements.
+		 The first element contains the part before the specified string.
+		 The second element contains the specified string.
+		 The third element contains the part after the string.
+
+ ***********************************************************************************
+Function Name :rsplit(separator, max split)
+
+Argument      : separator>>Optional. Specifies the separator to use when splitting the string. 
+				By default any white space is a separator
+		Max split>>Optional. Specifies how many splits to do. Default value is -1, which is "all occurrences"
+
+Return        : list
+ 
+Functionality :  method splits a string into a list, starting from the right.
+		If no "max" is specified, this method will return the same as the split() method.
+
+ ***********************************************************************************
+Function Name :rstrip(characters)
+
+Argument      : characters>>Optional. A set of characters to remove as trailing characters
+
+Return        : string
+ 
+Functionality :   method removes any trailing characters (characters at the end a string),
+		  space is the default trailing character to remove.
+ ***********************************************************************************
+Function Name :split(separator, max split)
+
+Argument      : separator>>Optional. Specifies the separator to use when splitting the string. 
+		By default any white space is a separator Max split>>Optional. Specifies how many splits to do. 
+		Default value is -1, which is "all occurrences"
+
+Return        : list
+ 
+Functionality :   method splits a string into a list.
+		You can specify the separator, default separator is any white space.
+
+***********************************************************************************
+Function Name :splitlines(keeplinebreaks)
+
+Argument      : keep line breaks>>Optional. Specifies if the line breaks 							
+		should be included (True), or not (False). Default value is False
+
+Return        : string
+ 
+Functionality :    method splits a string into a list. The splitting is done at line breaks.
+
+***********************************************************************************
+Function Name :startswith(value, start, end)
+
+Argument      : value>>Required. The value to check if the string starts with
+		Start>>Optional. An Integer specifying at which position to start the search
+		End>>Optional. An Integer specifying at which position to end the search
+
+Return        : boolean
+ 
+Functionality :   method returns True if the string starts with the specified value, otherwise False.
+***********************************************************************************
+Function Name :strip(characters)
+
+Argument      : characters>>Optional. A set of characters to remove as trailing characters
+
+Return        :string
+ 
+Functionality :  method removes any leading (spaces at the beginning) 			
+		 and trailing (spaces at the end) characters (space is 				
+		the default leading character to remove)
+
+***********************************************************************************
+Function Name :swapcase()
+
+Argument      : void
+
+Return        :string
+ 
+Functionality :  method returns a string where all the upper case letters are lower case and vice versa.
+
+***********************************************************************************
+Function Name :title()
+
+Argument      : void
+
+Return        : string
+ 
+Functionality :  method returns a string where the first character in every 			
+		word is upper case. Like a header, or a title.
+		If the word contains a number or a symbol, the first letter after that will be converted to upper case.
+
+***********************************************************************************
+Function Name :translate(table)
+
+Argument      : table>>Required. Either a dictionary, or a mapping table describing how to perform the replace
+
+Return        : string
+ 
+Functionality :   method returns a string where some specified characters 			
+		are replaced with the character described in a dictionary, or in a mapping table.
+		Use the maketrans() method to create a mapping table.
+		If a character is not specified in the dictionary/table, the character will not be replaced.
+		If you use a dictionary, you must use ASCII codes instead of characters.
+
+
+***********************************************************************************
+Function Name :upper()
+
+Argument      : void
+
+Return        :  string
+ 
+Functionality :  method returns a string where all characters are in upper case.
+ 		Symbols and Numbers are ignored.
+
+
+***********************************************************************************
+Function Name :zfill(len)
+
+Argument      : len>>Required. A number specifying the desired length of the string
+
+Return        :  string
+ 
+Functionality :  method adds zeros (0) at the beginning of the string, until it reaches the specified length.
+		If the value of the len parameter is less than the length of the string, no filling is done.
+
+
+***********************************************************************************
