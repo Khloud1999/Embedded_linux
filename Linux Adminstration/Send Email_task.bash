@@ -48,7 +48,7 @@ comment
 	
 	"linux_history" ---> mail subject
 	session3_history.txt ---> file to send
-	rehamma215@gmail.com ---> mail send the file to
+	khloud.khaled209@gmail.com ---> mail send the file to
 comment
 
 
