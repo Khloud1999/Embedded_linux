@@ -1,0 +1,229 @@
+  223  tree
+  224  sudo apt install tree
+  225  cd LAB_3
+  226  tree
+  227  ls
+  228  tree
+  229  sudo snap install tree  
+  230  tree
+  231  sudo apt  install tree 
+  232  tree
+  233  cd ~
+  234  mkdir f1 f2 f3 f4
+  235  cd f1
+  236  tree
+  237  cd ~
+  238  mkdir -p f30/{f1,f2,f3,f4}
+  239  cd f30
+  240  tree
+  241  cd ~
+  242  mkdir f40/{f1/f2/f3}
+  243  mkdir f40/{f1,/f2,/f3}
+  244  rm -rv f30
+  245  tree
+  246  vim f1
+  247  tail x.txt
+  248  vim f1
+  249  head -n
+  250  head -n f1
+  251  tail x.txt
+  252  kholoud.txt
+  253  more kholoud.txt
+  254  cd LAB_3
+  255  CD F1
+  256  cd F1
+  257  more f1
+  258  ls
+  259  vim f1
+  260  ls
+  261  head -n 3 file.txt
+  262  cat  f1
+  263  head -n 3 f1
+  264  tail -n 3 f1
+  265  tail -4 f1
+  266  vim f1
+  267  head -15 f1
+  268  cd ~
+  269  cd LAB_3
+  270  tree
+  271  more -n 3 f1
+  272  cd f2
+  273  cd F2
+  274  ls
+  275  vim file1.txt
+  276  cat file1.txt
+  277  head -n 15 file.1.txt
+  278  head -n 15 file1.txt
+  279  head -n15 file1.txt
+  280  man head
+  281  ls -li
+  282  cd~
+  283  cd ~
+  284  cd LAB_3
+  285  LS -LI
+  286  ls -li
+  287  man li
+  288  man -li
+  289  rem -r file1.txt
+  290  ls
+  291  touch fil1.txt
+  292  touch fil2.txt
+  293  vim file1.txt
+  294  rm fil1.txt
+  295  ls
+  296  rm fil2.txt
+  297  ls
+  298  touch HUssen_HardLINK.TXT
+  299  touch Mansour_Src.TXT
+  300  tree
+  301  gedit Mansour_Src.TEXT &
+  302  ln Mansour_Src.TXT HUssenn_HardLINK.TXT
+  303  LS
+  304  ls
+  305  rm HUssen_HardLINK.TXT
+  306  ls
+  307  ln Mansour_Src.TXT Hussen_HardLINK.TXT
+  308  LS -LI
+  309  ls -li
+  310  cat Hussen_HardLINK.TXT 
+  311  gedit Hussen_HardLINK.TXT 
+  312  rm Mansour_Src.T
+  313  rm Mansour_Src.TET
+  314  rm Mansour_Src.TXT
+  315  LS
+  316  ls
+  317  ln Mansour_Src.TXT Hussen_HardLINK.TXT
+  318  touch Mansour.TXT
+  319  cat Mansour.TXT 
+  320  ln -s Mansour.TXT HussenShadow.TXT
+  321  ls -li
+  322  gedit Mansour.TXT 
+  323  gedit Mansour.TXT &
+  324  cat HussenShadow.TXT 
+  325  rm Mansour.TXT 
+  326  cat HussenShadow.TXT 
+  327  ls -li
+  328  touch Mansour.TXT
+  329  gedit Mansour.TXT 
+  330  gedit Mansour.TXT &
+  331  gedit HussenShadow.TXT &
+  332  cat HussenShadow.TXT 
+  333  man ln 
+  334  ls -li
+  335  unlink Mansour.TXT 
+  336  rm HussenShadow.TXT 
+  337  ls
+  338  ls -l 
+  339  cd ~
+  340  ls -l 
+  341  tree
+  342  cd LAB_3
+  343  touch f1
+  344  ls
+  345  chomd u+x f1
+  346  chmod u+x f1
+  347  ls -l
+  348  chmod u-w f1
+  349  ls -l
+  350  chmod u-r f1
+  351  ls -l
+  352  chmod u-x f1
+  353  ls -l
+  354  chmod u-r f1
+  355  ls -l
+  356  chmod u-r f1
+  357  ls -l
+  358  chmod u-r f1
+  359  ls -l
+  360  chmod u-r f1
+  361  ls -l
+  362  chmod u-w f1
+  363  ls -l
+  364  chmod o-r f1
+  365  ls -l
+  366  chmod g-r f1
+  367  ls -l
+  368  chmod g-w f1
+  369  ls -l
+  370  chmod user=--- g=---
+  371  chmode uog-rwx f1
+  372  ls -l
+  373  ls -l
+  374  chmode uog+rwx f1
+  375  chmod uog+rwx f1
+  376  ls -l
+  377  chmod uog-rwx f1
+  378  ls -l
+  379  chmod uog+rwx f1
+  380  ls -l
+  381  chmod 777 f1
+  382  chmod 757 f1
+  383  ls -l
+  384  chmod 707 f1
+  385  ls -l
+  386  chmod 505 f1
+  387  ls -l
+  388  chmod 777 f1
+  389  sudo adduser roaa
+  390  sudo adduser ROAA
+  392  sudo adduser roaa
+  393  su roaa
+  394  cd ~
+  395  sudo deluser roaa
+  396  rm -r roaa
+  397  sudo rm -rf roaa
+  398  sudo roaa
+  399  su roaa
+  400  sudo usermod -aG sudo roaa
+  401  su roaa 
+  402  cd~
+  403  cd ~
+  404  groups
+  405  su roaa
+  406  su roaa
+  407  rm -r
+  408  rm -r /
+  409  rm -r / 2>errorfile
+  410  gedit errorfile
+  411  q
+  412  cat /dev/null
+  413  cd /dev/null
+  414  cd /dev /null
+  415  cd /dev/null
+  416  grep -r power/sys/
+  417  grep -r power/sys/ 1> dev/null
+  418  grep -r power /sys/ 1> dev/null
+  419  grep -r power /sys/ 1> errorfile
+  420  gedit errorfile
+  421  sudo grep -r power /sys/ 1> dev/null
+  422  cat dev/null
+  423  grep -r power /sys/ 1> /dev/null
+  424  sudo grep -r power /sys/ 1> dev/null
+  425  sudo grep -r power /sys/ 1> /dev/null
+  426  gedit errorfile
+  427  touch 1y 2y 3y 4y
+  428  ls -l *y
+  429  ls
+  430  rm -r *f
+  431  rm -r *y
+  432  ls
+  433  rm -r *y*
+  434  touch f1
+  435  touch f2
+  436  touch f3
+  437  touch f4
+  438  ls
+  439  rm [A-Z]
+  440  rm f1 f2 f3 f4
+  441  ls
+  442  cd LAB_3 
+  443  touch f1
+  444  touch f2
+  445  touch f3
+  446  touch f4
+  447  ls
+  448  rem *f*
+  449  rm -r *f*
+  450  ls
+  451  history
+
