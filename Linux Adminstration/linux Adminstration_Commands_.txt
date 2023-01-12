@@ -1,0 +1,422 @@
+********************************************************************************************
+linux Adminstration_Commands_
+Greated by:kholoud khaled
+
+********************************************************************************************
+
+$ >>regular user 
+# >>supper user (more feature)
+sudo su >>This command will change from normal user to super user
+
+********************************************************************************************
+pwd  >> print current folder path
+	-L or –logical prints environment variable content, including symbolic links.
+	-P or –physical prints the actual path of the current directory.
+
+********************************************************************************************
+
+whami >>  to print the user name currently logged in 
+hostname >> print pc name
+
+********************************************************************************************
+
+ctr+shift+t >>open terminal in any location 
+
+********************************************************************************************
+
+man >> command tell us information or manual pages for commands
+	help you to understand all the other command by type
+	man comandname >>man whoami
+	manual pages << 9 pags  >> man 1 intro >> show what in page one 
+        man 9 intro >> page 9 not standered (musn't show )
+     	-k >> man -k word_in_command>> to search about the command
+	     ( man -k word_in_command | grep needed_command )
+			this is used to filter all command which has passwd
+	-f >>man -f ls >>to know which mannual page that the command exist
+	-l >> man -I ls>> this command used to define mannual pages to be case sensitive
+	-w >> man -w command >>to know location of mannual pages for the command
+	     (man -w ls) > show wheree c code of ls for example
+
+********************************************************************************************
+
+help >> like shell's vergion of man - help comandname
+	( cd --help)  or  (help cd)
+
+********************************************************************************************
+
+clear >> (ctr+l) to clear all previous commands that were ran in terminal
+
+********************************************************************************************
+
+ls / >>   root can be listed through  
+
+   
+ls >> inside a folder you can list all file that the folder contents
+      to more spacigfic 
+     	ls -R lists all the files in the subdirectories.
+	ls -a shows hidden files in addition to the visible ones.
+	ls -lh shows the file sizes in easily readable formats, such as MB, GB
+        ls -li show inode number & time of last updeate & permision (read or write)
+
+
+lsusp >> list all usp avalible from our pc (mouse -uspasp)
+         show bus & id for every usp
+
+lspci >> list all drivers in pc (كرت الشاشه)
+
+lscpu >> list how many core in your pc 
+
+lsmod >> Loadded modules are the modules which loadable during the runtime 
+
+
+**********************************permition************************************************
+
+ls -l >> show linux permition 
+        |rwx|rwx|rwx
+        type |user|group|other
+        user : file creator
+        group : owner grouo
+        other : anyone except the user
+      How to change permission
+chmod >> change the permision >>(chomd 777 file name)
+        chmod u+x filename: user able to excuite
+        chmod g+w filename: group able to write
+        chmod o-r filename: other removed from read
+        chmod uog+rwx f1   all in one line
+        (4=read ,2=write ,1=excute ,4+2+1=7 =rwx)
+
+
+********************************************************************************************
+
+cd >> means change director -have folder you can move into
+	cd ~[username] goes to another user’s home directory.
+	cd .. moves one directory up.(go back)
+ 	cd- moves to your previous directory.
+	cd  (any path)/  move to this path 
+
+********************************************************************************************
+
+~ >> home  (cd ~)
+/ >> root
+
+* >>  list of evry path in this location 
+     (echo *.txt) match all file with .txt
+     (ls c* ) list any thing ends with the c
+
+[ ] >> test command with numerical operator
+(( ))>>test command with string operator
+
+{} >> (echo {a,b,c}.txt)  >> a.txt b.txt c.txt
+       to make more file in one line (touch app.{txt, c, cpp,py})
+
+
+********************************************************************************************
+
+mkdir >> greate folder one or multi 
+         mkdir sound >>make folder caled sound
+         mkdir sound/omr >> makee folder sound & omr inside it same time
+         -p >>make insteed folder 
+ 	 mkdir -p Music/2020/Songs will make the new “2020” directory.
+
+********************************************************************************************
+
+rmdir >> delete an empty directory (folder)
+         rmdir -p mydir/personal1 >> can delete instde
+
+
+********************************************************************************************
+
+touch >>  create an empty file or generate and modify a timestamp in the Linux command line.
+	  can greate this file with any extntion >> touch file.c
+	  touch cat dog carrot >> make three file in one line 
+
+********************************************************************************************
+
+rm >> delete a empty file  within a directory.
+      rm filename1 filename2 filename3 >> delete multiple file 
+	-i prompts system confirmation before deleting a file.(yes /no)
+	-f allows the system to remove wit hout a confirmation.
+	-r deletes files and directories recursively.(file & it's contents)
+        -rv to remove direcories and their contents with verbose (remove all)
+	rm *.c >>remove any .c
+
+********************************************************************************************
+
+xdg-open (file name) >> open this file
+
+********************************************************************************************
+
+mv >> to remaned this file (mv sond.txt omr.txt)
+      Responsible for moving from place to another
+
+********************************************************************************************
+
+cp >> copy files or directories and their content. 
+	cp filename1.txt filename2.txt filename3.txt /home/username/Documents
+	To copy the content of a file to a new file in the same directory,
+        enter cp followed by the source file and the destination file:(cp filename1.txt filename2.txt)
+	To copy an entire directory, 
+	cp -R src directory destination 
+          cp options:
+          cp -i : to overwrite
+          cp -ri : recursive copy of a folder with overwriting
+          cp -n : copy without overwrite
+
+********************************************************************************************
+
+head >>(head  file ) print the first 10 lines of each files 
+(head  file -n (number 100) ) print the first 100 line 
+
+
+********************************************************************************************
+
+tail >> print the last 10 lines of each files 
+(tail  file -n (number 100) ) print the last100 line
+
+********************************************************************************************
+
+less >>show inside the file in nice and interactive way 
+	can write any word search in this file and marker it 
+	scroll to show more in the file (q) to exist 
+
+********************************************************************************************
+
+cat >> writes file content to the standard output.
+        show all thing inside the file (open file)all at once.
+	( CTR + d) or (q) >> to exit the cat window 
+(cat > filename.txt) >> creates a new file.
+(cat filename1.txt filename2.txt > filename3.txt )
+        cocatenate filename1.txt and filename2.txt and stores the output in filename3.txt.
+(tac filename.txt )>> displays content in reverse order.
+(cat -n file name )>> print all in file with line number.
+(cat -s file name) >> print all in file remove the spaces. 
+(cat -b file name) >> to print line number with cat when requesting to show file contents
+(cat -s <file_name)>> To squeze all the blanked line into single line
+(cat -E <file_name )>> to add $ sign at the end of each line
+
+
+********************************************************************************************
+
+> replace in file
+>> append in file 
+
+
+********************************************************************************************
+
+history >> show all history of the user 
+           (history >> kh.txt) put histry in file :append
+
+********************************************************************************************
+
+cut >> Very helpful in coloumn searching
+cut -de<delimeter> -<column_number(fx)>
+	ex: {cut -d: -f1 /etc/passwd}
+
+********************************************************************************************
+
+echo >> (echo "hi")displays a line of text or string in terminal 
+         can be useful if we need to append that word to file
+        (echo "hello" >> file name) append hello to this file
+	(echo f*) >> out all folder starts  with the letter f
+        (echo {1..99} ) >> print num from 1 to 99
+         echo [option] [string]
+          -n displays the output without the trailing newline.
+          -e enables the interpretation of the following backslash escapes:
+           \a plays sound alert.
+           \b removes spaces in between a text.
+           \c produces no further output.
+           -E displays the default option and disables the interpretation of backslash escapes.
+
+
+********************************************************************************************
+
+wc >> print how many line or word or bytes in this file
+	(date or any command | wc )>> show nof line - word - byte in same time
+   	  wc [option] [file]
+   	  -c : nof bytes 
+   	  -l : nof lines 
+    	 -m : nof char
+    	 -w : nof word
+
+********************************************************************************************
+
+date >> show the time & date now 
+       (date > f1.txt)print output in file not in terminal:
+                      send output to file (replac all in fille)
+        (date >> f1.txt) append in file not replace 
+	both graet the file if not exist
+
+********************************************************************************************
+
+uptime >> Will inform you about total time from starting the machine
+
+
+********************************************************************************************
+
+env  or printenv >>envirnoment var
+    will print all defined environmnt variables for the user 
+
+
+********************************************************************************************
+
+export >> (export var name)
+           Used to add a new environment variable 
+	   will knowon through the current open terminal
+	   (echo $varname) to print the var
+
+********************************************************************************************
+
+vim >> open file &write in it , used for GUI text editor replacement 
+:w  >>save change in vim file and stay
+:q! >>exit from vim file without saving 
+:wq >>save change and exit
+
+******************************************************************************************** 
+
+nano kho.txt >> as vim open file &write in it  
+
+********************************************************************************************
+
+gedit file.txt >> to open file text ,stop terminal
+gedit file.txt & >> to open file text ,poccer take id ,not stop terminal
+
+
+********************************************************************************************
+
+diff >> use to find diff between two diff files
+	diff [option] file1 file2
+	-c displays the difference between two files in a context form.
+        -u displays the output without redundant information.
+	-i makes the diff command case insensitive.
+
+
+********************************************************************************************
+
+find >> find files or folders matching a particular search pattern 
+	(find . -name '* py') >>find foldr namee any thing follow by '.py'
+        (find . -type d -name '*src*') >>find by type >find folder which type is 'd ' and name contain 'src' 
+	(find . -type f -size +100k -size -1M) >> find by size 
+
+
+********************************************************************************************
+
+grep >> (grep word file search inside)it prints all lines that contain the specific pattern. 
+	 This command helps filter through large log files
+	 grep [option] [word][file]
+           -v grep all acept this word 
+           -nc 2 return two line before and 2 line after
+	   -r search about word in all file
+           -n return number of matched lines with the search element
+
+
+********************************************************************************************
+
+tree >> show n.of directors & file in this director 
+        show root 
+        ( tree -L 1 / ) show first level 
+
+***************************Copy from terminal***********************************************
+
+CTRL + Shift + c to copy
+
+CTRL + Shift + v to Past
+
+highlight the line which needed to be copied
+
+Then press shift +insrt
+
+***************************C over linex****************************************************
+
+touch test.c >> to add a file
+gedit test.c >> to open and edit the text editor
+compile using >> gcc test.c -o out
+to run the excuitable >> ./out
+to view the excuitable file >> out.exe
+
+***************************hard link*******************************************************
+
+touch hussen_hardlink.txt
+touch mansour_src.txt
+ls
+gedit mansour_src.txt
+gedit mansour_src.txt&
+ln mansour_src.txt hussen_hardlink.txt 
+ls
+rm  hussen_hardlink.txt 
+ln mansour_src.txt hussen_hardlink.txt 
+ls -li
+cat hussen_hardlink.txt
+gedit hussen_hardlink.txt
+rm mansour_src.txt
+ls
+
+***************************soft link*******************************************************
+
+touch mansour_src.txt
+ls
+rm mansour_src.txt
+touch mansour_softlink.txt
+ls
+cat mansour_softlink.txt
+ln -s mansour_softlink.txt hussen_shadwoo.txt 
+ls -li
+gedit mansour_softlink.txt &
+cat hussen_shadwoo.txt
+rm mansour_softlink.txt
+cat hussen_shadwoo.txt
+ls -li
+touch mansour_softlink.txt
+ls -li
+rm mansour_src.txt
+rm hussen_hardlink.txt
+ls -li
+ls
+rm hussen_shadwo.txt 
+ls
+ls -li
+gedit mansour_softlink.txt
+cat hussen_shadwoo.txt
+unlink mansour_softlink.txt
+ls -li
+ls -l
+ls
+rm hussen_shadwoo.txt
+ls
+
+***************************add new user**************************************************
+
+sudo adduser(username)  >> add new user
+ls >> in home show the users you have
+groups >>show all groups included to the current usr ex (sudo)
+sudo usermod -aG sudo (name of newuser) >>
+             add the usr to sudo to be able to use sudo permission in the new user
+sudo deluser (user name) >>delete the usr there is a need to close the terminal
+
+*******************************shell*******************************************************
+
+shell convert codes to binary 
+You can say that the shell is the glue that binds these commands together
+When shell meet space it will see it as command so take care from spaces
+ls /bin/ | grep ash >> How to check available sh
+
+#!/bin/bash
+#  -->> means this line is a comment 
+#!  -->> the ! remove the comment effect and open sub bash session 
+#!/bin/bash ->> Define shell path to be defined 'define shell path variable  
+
+./script fil name >> command which run shall script file
+
+********************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
