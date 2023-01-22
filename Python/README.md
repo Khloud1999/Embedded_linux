@@ -24,4 +24,22 @@
 ![product in csv file](https://user-images.githubusercontent.com/72269263/213895298-a464d258-c710-4fac-94de-68b5fd2cee95.PNG)
 
 
+****************************************************************************************************************************************
+
+2-Calculator with two modes
+
+-main window
+
+![main window](https://user-images.githubusercontent.com/72269263/213895441-777e47dc-28e7-4066-b6bf-eacdd3b83b59.PNG)
+
+-standered mode
+
+![standered mode](https://user-images.githubusercontent.com/72269263/213895450-f5bcb258-0749-4339-8653-9b23f9ee5351.PNG)
+
+-programmer mode
+
+![programmer mode](https://user-images.githubusercontent.com/72269263/213895461-b5d01211-057b-41b9-8a14-2e3394fac8ad.PNG)
+
+
+
 
