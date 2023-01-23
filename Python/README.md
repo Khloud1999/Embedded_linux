@@ -40,15 +40,9 @@
 
 ![programmer mode](https://user-images.githubusercontent.com/72269263/213895461-b5d01211-057b-41b9-8a14-2e3394fac8ad.PNG)
 
-****************************************************************************************************************************************
-
-3-2asp shop
-
-![2asp_shop](https://user-images.githubusercontent.com/72269263/213895491-3aceaf14-ed65-4919-9f06-fce6a5b2a1d2.PNG)
-
 
 ****************************************************************************************************************************************
-4-Arrow Pattern
+3-Arrow Pattern
   -when n=3 and size =3 
   
 ![Arrow Pattern](https://user-images.githubusercontent.com/72269263/213895543-c886edb1-589e-47f1-986e-a5e800585120.PNG)
